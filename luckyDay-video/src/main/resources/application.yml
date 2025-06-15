@@ -1,0 +1,18 @@
+dubbo:
+  application:
+    name: video-service
+  protocol:
+    name: dubbo
+    port: -1
+  registry:
+    address: nacos://203.57.254.53:8848
+  consumer:
+    check: false
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://${DATASOURCE_HOST:106.55.196.109:3306}/${DATASOURCE_NAME:lucky-user}?serverTimezone=GMT%2B8
+    username: ${DATASOURCE_USER:ksx}
+    password: ${DATASOURCE_PASSWORD:Aa123123}
+server:
+  port: 8000
