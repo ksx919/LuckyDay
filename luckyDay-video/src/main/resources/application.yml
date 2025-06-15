@@ -9,6 +9,13 @@ dubbo:
   consumer:
     check: false
 spring:
+  application:
+    name: video-service
+  cloud:
+    nacos:
+      server-addr: 203.57.254.53:8848
+  config:
+    import: nacos:video-service
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://${DATASOURCE_HOST:106.55.196.109:3306}/${DATASOURCE_NAME:lucky-user}?serverTimezone=GMT%2B8
