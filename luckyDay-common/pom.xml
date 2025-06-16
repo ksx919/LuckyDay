@@ -54,6 +54,12 @@
             <artifactId>qiniu-java-sdk</artifactId>
             <version>7.12.0</version>
         </dependency>
+
+        <dependency>
+            <groupId>ws.schild</groupId>
+            <artifactId>jave-all-deps</artifactId>
+            <version>3.2.0</version>
+        </dependency>
     </dependencies>
 
     <build>
